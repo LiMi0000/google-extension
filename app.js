@@ -18,11 +18,11 @@ async function fetchData() {
   document.getElementById('news').innerHTML = result.value
     .map(
       (news) => `<div>
-  <p>${news.datePublished}</p>
-  <h3>${news.name}</h3>
-  <p>${news.description}</p>
-  <a href=${news.url}>${news.url}</a>
-</div>`
+    <p>${news.datePublished}</p>
+    <h3>${news.name}</h3>
+    <p>${news.description}</p>
+    <a href=${news.url}>${news.url}</a>
+  </div>`
     )
     .join('');
 }
